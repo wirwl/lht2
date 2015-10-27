@@ -1,0 +1,37 @@
+mixin createColorPattern(className, rgb, active)
+    li.accordeon__inner-item
+        div(class=className + "__color-pattern " +
+        ((active) ? 'color-pattern_active ' : '') +
+        'color-pattern_'+rgb
+        )
+
+mixin createListedCheckbox(word)
+    li.accordeon__inner-item
+        input(type="checkbox" id=word checked).accordeon__inner-checkbox
+        label(for=word).accordeon__checkbox-label=word
+
+mixin nav(className, items, activeIndx)
+    nav(class= className)
+        .centering
+            ul(class= className + "__list")
+                each item, indx in items
+                    li(class=className + "__item " + ((activeIndx == indx) ? className + '__item' + '_active' : ''))
+                        a(href="#" class= className + "__link")= item
+
+//mixin breadcrumb(className, items)
+//    div(class= className)
+//        ul(class= className + "__list")
+//            each item in items
+//                li(class=className + "__item")
+//                    a(href="#" class= className + "__link")= item
+
+mixin breadcrumbs(className, crumbs)
+    div(class= className)
+        ul(class= className + "__list")
+            each bread, ind in crumbs
+                li(class="breadcrumbs__item " +
+                ((ind == 0) ? 'breadcrumbs__item_first' : '') +
+                ((ind == 1) ? 'breadcrumbs__item_second' : '') +
+                ((ind == 2) ? 'breadcrumbs__item_last' : '')
+                )
+                    a(href="#").breadcrumbs__list-link #{bread}

@@ -1,0 +1,53 @@
+.accordeon__slider-wrapper {
+  padding-bottom: 25px;
+  padding-right: 37px;
+}
+.accordeon__slider-numbers {
+  margin-bottom: 18px;
+}
+
+.accordeon__from-label {
+  //float: left;
+}
+
+.accordeon__to-label {
+  float: right;
+}
+
+.accordeon__from-input, .accordeon__to-input {
+  border: 1px solid rgb(235, 237, 239);
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 1px 0px rgba(148, 148, 148, 0.43);
+  width: 79px;
+  height: 26px;
+  margin-left: 10px;
+  padding-left: 8px;
+}
+.ui-slider {
+
+}
+.ui-slider.ui-slider-horizontal {
+  width: 273px;
+  height: 3px;
+  border: none;
+  border-radius: 0;
+  background: #dee1e4;
+}
+
+.ui-slider .ui-slider-range {
+  background: $myOrange;
+}
+
+.ui-slider .ui-slider-handle {
+  background: red;
+  width: 8px;
+  height: 13px;
+  border:none;
+  top:7px;
+  border-radius: 0;
+  cursor:pointer;
+  outline:none;
+}
+.ui-widget{  }
+.ui-widget-content {}
+.ui-corner-all {}

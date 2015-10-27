@@ -1,0 +1,32 @@
+.accordeon__select-color {
+  width: 220px;
+}
+
+.accordeon__color-pattern {
+  border: 1px solid rgb(222, 225, 228);
+  width: 35px;
+  height: 35px;
+  &:hover {
+    box-shadow: 0 0 1px 1px $myOrange;
+  }
+}
+
+$colors: #ffffff #cccccc #000000 #0a3153
+         #ff1800 #fff343 #fb914a #92c37c
+         #40a6ff #9870ad #dc78ad #7f401d;
+@each $color in $colors {
+  .color-pattern_#{str_slice(str_slice(ie_hex_str($color),2),3)} {
+    background: $color;
+  }
+}
+
+.accordeon__select-color .accordeon__inner-item {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.color-pattern_active {
+  box-shadow: 0 0 1px 2px $myOrange;
+  border-radius: 2px;
+}

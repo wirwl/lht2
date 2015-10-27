@@ -1,0 +1,118 @@
+//---------Аккордеон----------------------------------------------
+.accordeon {
+  background: white;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+
+}
+
+.accordeon__trigger {
+  display:block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  //cursor: text;
+  color: inherit;
+  padding: 10px 116px 10px 20px;
+  //margin-right: 10px;
+  &:focus  {
+    outline: none;
+  }
+}
+
+.accordeon__item {
+  border-bottom: 1px solid $border-color;
+  //padding-bottom:10px;
+}
+
+.accordeon__trigger {
+  cursor: pointer;
+  //background:url('../../img/up.png') center right no-repeat;
+  //background: 0;
+}
+.accordeon__trigger:hover{
+  background:url('../../img/up.png') 95% 50% no-repeat;
+}
+.accordeon__trigger:hover.arrow-down {
+  background: #d9e5ea url('../../img/down.png') 95% 50% no-repeat;
+}
+
+.accordeon__inner {
+  //display: none;
+  margin-left: 20px;
+}
+.active {
+  //display:block;
+}
+//--------------Наличие  в магазинах----------------------------------------
+.accordeon__inner-item {
+  margin-bottom: 10px;
+}
+.accordeon__inner-radio {
+  display:none;
+}
+.accordeon__radio-label {
+  position:relative;
+  padding-left: 30px;
+}
+.accordeon__radio-label:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  left:0;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  border: 3px solid #dee1e4;
+  border-radius: 16px;
+}
+input[type=radio]:checked + .accordeon__radio-label:before {
+  content: "\2022";
+  color: $myOrange;
+  font-size: 36px;
+  text-align: center;
+  line-height: 14px;
+  border-color:$myOrange;
+}
+//--------------Бренды-------------------------------------
+.accordeon__inner-checkbox {
+  display:none;
+}
+.accordeon__checkbox-label {
+  position:relative;
+  padding-left: 30px;
+}
+.accordeon__checkbox-label:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  left:0;
+  width: 19px;
+  height: 19px;
+  margin-right: 10px;
+  background: $border-color;
+  border-radius: 2px;
+}
+input[type=checkbox] + .accordeon__checkbox-label:hover:before {
+  content: "\2713";
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  line-height: 19px;
+  background: $border-color;
+}
+input[type=checkbox]:checked + .accordeon__checkbox-label:before {
+  content: "\2713";
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  line-height: 19px;
+  background: $myOrange;
+}
+//-------------------------------------------------------
+.accordeon__reset-filter {
+  color:#5db2fc;
+  margin-bottom: 10px;
+}

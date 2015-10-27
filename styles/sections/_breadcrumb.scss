@@ -1,0 +1,37 @@
+.breadcrumbs__item {
+
+  display: inline-block;
+  &:before {
+    content: ' > ';
+  }
+  &:first-child:before {
+    content: '';
+  }
+}
+
+.breadcrumbs__item_first .breadcrumbs__list-link {
+  text-decoration: none;
+  //cursor: text;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumbs__item_second .breadcrumbs__list-link {
+  color: $myOrange;
+}
+
+.breadcrumbs__item_last {
+  padding: 20px 0;
+  display: block;
+  font-size: 20px;
+  .breadcrumbs__list-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+  }
+  &:before {
+    content: '';
+  }
+}

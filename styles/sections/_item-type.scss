@@ -1,0 +1,28 @@
+.sidebar__item-type {
+  background: white;
+  border: 1px solid #dee1e4;
+  border-radius: 4px;
+  margin-bottom: 35px;
+}
+
+.sidebar__item-type__list {
+
+}
+
+.sidebar__item-type__link {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+
+.sidebar__item-type__item {
+  padding: 10px 20px;
+  &.sidebar__item-type_active {
+    background: #d9e5ea;
+    &.sidebar__item-type_active .sidebar__item-type__link {
+      color: #5d656c;
+    }
+  }
+}
+
+//active color: #5d656c
+//active bkg: #d9e5ea

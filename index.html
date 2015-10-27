@@ -1,0 +1,228 @@
+
+<!--mixin breadcrumb(className, items)-->
+<!--    div(class= className)-->
+<!--        ul(class= className + "__list")-->
+<!--            each item in items-->
+<!--                li(class=className + "__item")-->
+<!--                    a(href="#" class= className + "__link")= item--><!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="ru-Ru">
+	<head>
+		<meta charset="utf-8">
+		<!--meta(name="viewport" content="device-width")-->
+		<link rel="stylesheet" type="text/css" href="bower/slider/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<title>Главная страница</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="maincontent">
+				<header class="header">
+					<div class="header__top">
+						<div class="centering">
+							<div class="socials">
+								<ul class="socials__list">
+									<li class="socials__item"><a href="#" class="socials__link socials__link_vk"></a></li>
+									<li class="socials__item"><a href="#" class="socials__link socials__link_fb"></a></li>
+									<li class="socials__item"><a href="#" class="socials__link socials__link_tw"></a></li>
+								</ul>
+							</div>
+							<div class="header__address">ул. Маяковского 6, офис 17</div>
+							<div class="header__phone"><a href="tel:+79211231213" class="header__phone-number">+7(921)123-12-13</a></div>
+						</div>
+					</div>
+					<div class="header__bottom">
+						<div class="centering">
+							<div class="header__logo"><img src="../../img/cooltech.png" class="header-logo"></div>
+							<div class="header__search">
+								<input type="text" class="header__search__input">
+								<button class="header__search__button">Найти</button>
+							</div>
+							<div class="header__links"><a href="#" class="header__links_item">Карта проезда</a><a href="#" class="header__links_item">История заказов</a><a href="#" class="header__links_item">Корзина</a></div>
+						</div>
+					</div>
+				</header>
+				<nav class="navigation">
+					<div class="centering">
+						<ul class="navigation__list">
+							<li class="navigation__item "><a href="#" class="navigation__link">Планшеты</a></li>
+							<li class="navigation__item "><a href="#" class="navigation__link">Мобильные телефоны</a></li>
+							<li class="navigation__item navigation__item_active"><a href="#" class="navigation__link">Mp3 плееры</a></li>
+							<li class="navigation__item "><a href="#" class="navigation__link">Персональные компьютеры</a></li>
+							<li class="navigation__item "><a href="#" class="navigation__link">Ноутбуки</a></li>
+							<li class="navigation__item "><a href="#" class="navigation__link">Аксессуары</a></li>
+							<li class="navigation__item "><a href="#" class="navigation__link">Бытовая техника</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="content-wrapper">
+					<div class="centering">
+						<!--breadcrumb-->
+						<div class="breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item breadcrumbs__item_first"><a href="#" class="breadcrumbs__list-link">Главная</a></li>
+								<li class="breadcrumbs__item breadcrumbs__item_second"><a href="#" class="breadcrumbs__list-link">Каталог</a></li>
+								<li class="breadcrumbs__item breadcrumbs__item_last"><a href="#" class="breadcrumbs__list-link">Мобильные телефоны</a></li>
+							</ul>
+						</div>
+						<div class="content">
+							<div class="content__inner">
+								<div class="article clearfix">
+									<div class="sidebar__wrapper">
+										<!--mixin breadcrumb(className, items)-->
+										<!--    div(class= className)-->
+										<!--        ul(class= className + "__list")-->
+										<!--            each item in items-->
+										<!--                li(class=className + "__item")-->
+										<!--                    a(href="#" class= className + "__link")= item-->
+										<div class="sidebar">
+											<div class="sidebar__item-type">
+												<ul class="sidebar__item-type__list">
+													<li class="sidebar__item-type__item"><a href="#" class="sidebar__item-type__link">Флагманы</a></li>
+													<li class="sidebar__item-type__item sidebar__item-type_active"><a href="#" class="sidebar__item-type__link">Бюджетная линейка</a></li>
+												</ul>
+											</div>
+											<div class="accordeon">
+												<ul class="accordeon__list">
+													<li class="accordeon__item active"><a href="#" class="accordeon__trigger">Наличие в магазинах</a>
+														<ul class="accordeon__inner">
+															<li class="accordeon__inner-item">
+																<input type="radio" name="avaliability" id="all" checked class="accordeon__inner-radio">
+																<label for="all" class="accordeon__radio-label">Во всех магазинах</label>
+															</li>
+															<li class="accordeon__inner-item">
+																<input type="radio" name="avaliability" id="near" class="accordeon__inner-radio">
+																<label for="near" class="accordeon__radio-label">В ближайшем ко мне магазине</label>
+															</li>
+														</ul>
+													</li>
+													<li class="accordeon__item active"><a href="#" class="accordeon__trigger">Бренды</a>
+														<ul class="accordeon__inner">
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Lenovo" checked class="accordeon__inner-checkbox">
+																										<label for="Lenovo" class="accordeon__checkbox-label">Lenovo</label>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Apple" checked class="accordeon__inner-checkbox">
+																										<label for="Apple" class="accordeon__checkbox-label">Apple</label>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Samsung" checked class="accordeon__inner-checkbox">
+																										<label for="Samsung" class="accordeon__checkbox-label">Samsung</label>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Asus" checked class="accordeon__inner-checkbox">
+																										<label for="Asus" class="accordeon__checkbox-label">Asus</label>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Motorola" checked class="accordeon__inner-checkbox">
+																										<label for="Motorola" class="accordeon__checkbox-label">Motorola</label>
+																									</li><a href="#" class="accordeon__reset-filter">Сбросить фильтр</a>
+														</ul>
+													</li>
+													<li class="accordeon__item active"><a href="#" class="accordeon__trigger">Цена</a>
+														<div class="accordeon__inner">
+															<div class="accordeon__slider-wrapper">
+																<div class="accordeon__slider-numbers">
+																	<label class="accordeon__from-label">от
+																		<input type="number" value="100" class="accordeon__from-input">
+																	</label>
+																	<label class="accordeon__to-label">до
+																		<input type="number" value="13000" class="accordeon__to-input">
+																	</label>
+																</div>
+																<div id="slider-range"></div>
+															</div>
+														</div>
+													</li>
+													<li class="accordeon__item active"><a href="#" class="accordeon__trigger">Цвет</a>
+														<ul class="accordeon__inner accordeon__select-color">
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_FFFFFF"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_active color-pattern_CCCCCC"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_000000"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_0A3153"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_FF1800"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_FFF343"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_FB914A"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_92C37C"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_40A6FF"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_9870AD"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_DC78AD"></div>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<div class="accordeon__color-pattern color-pattern_7F401D"></div>
+																									</li>
+														</ul>
+													</li>
+													<li class="accordeon__item active"><a href="#" class="accordeon__trigger">Операционные системы</a>
+														<ul class="accordeon__inner">
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Android" checked class="accordeon__inner-checkbox">
+																										<label for="Android" class="accordeon__checkbox-label">Android</label>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="iOS" checked class="accordeon__inner-checkbox">
+																										<label for="iOS" class="accordeon__checkbox-label">iOS</label>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Windows Mobile" checked class="accordeon__inner-checkbox">
+																										<label for="Windows Mobile" class="accordeon__checkbox-label">Windows Mobile</label>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Symbian" checked class="accordeon__inner-checkbox">
+																										<label for="Symbian" class="accordeon__checkbox-label">Symbian</label>
+																									</li>
+																									<li class="accordeon__inner-item">
+																										<input type="checkbox" id="Custom" checked class="accordeon__inner-checkbox">
+																										<label for="Custom" class="accordeon__checkbox-label">Custom</label>
+																									</li>
+														</ul>
+													</li>
+												</ul>
+												<!--    .accordeon__content-->
+												<!--        .class-wrapper-->
+												<!--            .class Я пункт номер #{i}-->
+											</div>
+										</div>
+									</div>
+									<div class="article__inner">Я контент на главной 1</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="centering">
+				<div class="footer__content">&copy; Все права защищены</div>
+			</div>
+		</footer>
+		<script src="bower/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script type="text/javascript" src="bower/slider/jquery-ui.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

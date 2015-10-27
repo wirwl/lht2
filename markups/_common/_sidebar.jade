@@ -1,0 +1,64 @@
+include _mixins
+.sidebar
+    .sidebar__item-type
+        ul.sidebar__item-type__list
+            li.sidebar__item-type__item
+                a(href="#").sidebar__item-type__link
+                    | Флагманы
+            li.sidebar__item-type__item.sidebar__item-type_active
+                a(href="#").sidebar__item-type__link
+                    | Бюджетная линейка
+    .accordeon
+        ul.accordeon__list
+            li.accordeon__item.active
+                a(href="#").accordeon__trigger Наличие в магазинах
+                ul.accordeon__inner
+                    li.accordeon__inner-item
+                        input(type="radio" name="avaliability" id="all" checked).accordeon__inner-radio
+                        label(for="all").accordeon__radio-label Во всех магазинах
+                    li.accordeon__inner-item
+                        input(type="radio" name="avaliability" id="near").accordeon__inner-radio
+                        label(for="near").accordeon__radio-label В ближайшем ко мне магазине
+            li.accordeon__item.active
+                a(href="#").accordeon__trigger Бренды
+                ul.accordeon__inner
+                    +createListedCheckbox("Lenovo")
+                    +createListedCheckbox("Apple")
+                    +createListedCheckbox("Samsung")
+                    +createListedCheckbox("Asus")
+                    +createListedCheckbox("Motorola")
+                    a(href="#").accordeon__reset-filter Сбросить фильтр
+            li.accordeon__item.active
+                a(href="#").accordeon__trigger Цена
+                .accordeon__inner
+                    .accordeon__slider-wrapper
+                        .accordeon__slider-numbers
+                            label.accordeon__from-label от
+                                input(type='number' value='100').accordeon__from-input
+                            label.accordeon__to-label до
+                                input(type='number' value='13000').accordeon__to-input
+                        #slider-range
+            li.accordeon__item.active
+                a(href="#").accordeon__trigger Цвет
+                ul.accordeon__inner.accordeon__select-color
+                    - each color,index in ['FFFFFF', 'CCCCCC','000000', '0A3153', 'FF1800', 'FFF343' ,'FB914A','92C37C', '40A6FF', '9870AD', 'DC78AD', '7F401D']
+                        +createColorPattern('accordeon',color,(index==1)? true: false)
+
+            li.accordeon__item.active
+                a(href="#").accordeon__trigger Операционные системы
+                ul.accordeon__inner
+                    +createListedCheckbox("Android")
+                    +createListedCheckbox("iOS")
+                    +createListedCheckbox("Windows Mobile")
+                    +createListedCheckbox("Symbian")
+                    +createListedCheckbox("Custom")
+
+
+
+
+
+
+        //- for (var i = 1; i < 11; i++)
+        //    .accordeon__content
+        //        .class-wrapper
+        //            .class Я пункт номер #{i}

@@ -1,0 +1,107 @@
+
+
+@mixin get-sprite($map, $icon) {
+  $sprite-image: sprite-file($map, $icon);
+  $sprite-map: sprite-url($map);
+  $sprite-position: sprite-position($map, $icon);
+
+  background: $sprite-map $sprite-position no-repeat;
+
+  $sprite-height: image-height($sprite-image);
+  $sprite-width: image-width($sprite-image);
+
+  height: $sprite-height;
+  width: $sprite-width;
+}
+
+.socials__link {
+  display: block;
+  //width: 50px;
+  //height: 50px;
+}
+
+//$icons-layout: horizontal;
+//$icons-spacing: 40px;
+//@import "icons/*.png";
+
+$socials: fb, vk, tw;
+
+$socials-map: sprite-map('icons/*.png', $spacing: 40px);
+
+@each $social in $socials {
+  .socials__link_#{$social} {
+    @include get-sprite($socials-map, $social);
+  }
+}
+
+//* {outline: 1px dashed black;}
+.socials {
+  position: absolute;
+  left:0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.socials__item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header__top {
+  background: white;
+  border-bottom: 2px solid $border-color;
+}
+.header__bottom {
+  background: $bkg-color;
+}
+.header__top .centering {
+  min-height: 77px;
+}
+.header__bottom .centering {
+  min-height: 94px;
+}
+
+.header__address {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../../img/map-pin.png") no-repeat;
+  padding-left: 20px;
+}
+
+.header__phone {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: url('../../img/telephone.png') no-repeat;
+  padding-left: 20px;
+}
+
+.header__phone-number {
+  text-decoration: none;
+  color: black;
+}
+.header__links_item {
+  margin-left: 25px;
+}
+.header__logo {
+  position: absolute;
+  left:0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__search {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 32px;
+}
+.header__links {
+  position: absolute;
+  right:0;
+  top: 50%;
+  transform: translateY(-50%);
+}
