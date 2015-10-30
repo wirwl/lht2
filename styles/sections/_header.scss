@@ -91,6 +91,9 @@ $socials-map: sprite-map('icons/*.png', $spacing: 40px);
   left:0;
   top: 50%;
   transform: translateY(-50%);
+  max-width: 238px;
+  max-height: 36px;
+  overflow: hidden;
 }
 .header__search {
   position: absolute;

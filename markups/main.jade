@@ -17,19 +17,29 @@ html(lang='ru-Ru')
         .wrapper
             .maincontent
                 include _common/_header
-                +nav('navigation', ['Планшеты', 'Мобильные телефоны', "Mp3 плееры", "Персональные компьютеры","Ноутбуки","Аксессуары","Бытовая техника"], 2)
+                +nav('navigation', ['Планшеты', 'Мобильные телефоны', "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"], 1)
                 .content-wrapper
 
                     .centering
                         //breadcrumb
-                        +breadcrumbs("breadcrumbs",["Главная","Каталог","Мобильные телефоны"])
+                        +breadcrumbs("breadcrumbs",["Главная", "Каталог", "Мобильные телефоны"])
                         .content
                             .content__inner
                                 block content
         footer.footer
             .centering
-                .footer__content
-                    | &copy; Все права защищены
+                .footer__up.clearfix
+                    //.socials
+                    //    ul.socials__list
+                    //        each social in ['vk', 'fb', 'tw']
+                    //            li.socials__item
+                    //                a(href="#" class="socials__link socials__link_" + social)
+
+                    +nav('footer__navigation', ['Планшеты', 'Мобильные телефоны', "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"], 1)
+                        .sb-wrapper
+                            +createSocialButtons('footer')
+                    img(src='../../img/logo-footer.png').footer__up__logo
+            .footer__down All rights reserved. 2015. no copy allowed
         script(src="bower/jquery/dist/jquery.js" type="text/javascript")
         script(type='text/javascript' src="bower/slider/jquery-ui.js")
         script(src="js/main.js" type="text/javascript")

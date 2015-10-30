@@ -36,18 +36,28 @@
 
 .ui-slider .ui-slider-range {
   background: $myOrange;
+  border-radius:0;
 }
 
 .ui-slider .ui-slider-handle {
-  background: red;
-  width: 8px;
-  height: 13px;
-  border:none;
-  top:7px;
-  border-radius: 0;
-  cursor:pointer;
-  outline:none;
+
 }
 .ui-widget{  }
 .ui-widget-content {}
 .ui-corner-all {}
+.ui-slider-horizontal .ui-slider-handle {
+
+  margin-left:-3px;
+  //background: red;
+  width: 8px;
+  height: 13px;
+  border:none;
+  top:1px;
+  border-radius: 0;
+  cursor:pointer;
+  outline:none;
+  background: url('../../img/rect.png');
+  &:nth-child(3) {
+    margin-left:-4px;
+  }
+}

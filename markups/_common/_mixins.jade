@@ -1,3 +1,11 @@
+mixin createSocialButtons(className)
+    div(class=className+"__socials")
+        ul(class=className+"__socials__list")
+            each social in ['vk', 'fb', 'tw']
+                li(class=className+"__socials__item")
+                    a(href="#" class="socials__link socials__link_" + social)
+
+
 mixin createColorPattern(className, rgb, active)
     li.accordeon__inner-item
         div(class=className + "__color-pattern " +
@@ -14,9 +22,9 @@ mixin nav(className, items, activeIndx)
     nav(class= className)
         .centering
             ul(class= className + "__list")
-                each item, indx in items
-                    li(class=className + "__item " + ((activeIndx == indx) ? className + '__item' + '_active' : ''))
-                        a(href="#" class= className + "__link")= item
+                each item, index in items
+                    li(class=className + "__item ")
+                        a(href="#" class= className + "__link "+ ((activeIndx == index) ? className + '__item' + '_active' : ''))= item
 
 //mixin breadcrumb(className, items)
 //    div(class= className)

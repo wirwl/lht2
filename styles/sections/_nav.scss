@@ -2,6 +2,7 @@
   background: white;
   border-bottom: 2px solid $border-color;
   margin-bottom: 25px;
+  font-size:0;
 }
 .navigation__item{
   display: inline-block;
@@ -10,6 +11,7 @@
   display: block;
   text-decoration: none;
   padding: 15px 10px;
+  font-size: 14px;
 
   &:hover {
     background: #e4e2e2;
@@ -19,7 +21,7 @@
     background: $myOrange;
   }
 }
-.navigation__link_active {
+.navigation__item_active {
   background: $myOrange;
   color: white;
 }

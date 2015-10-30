@@ -33,17 +33,16 @@
 .accordeon__trigger:hover{
   background:url('../../img/up.png') 95% 50% no-repeat;
 }
-.accordeon__trigger:hover.arrow-down {
+.accordeon__trigger:hover {
   background: #d9e5ea url('../../img/down.png') 95% 50% no-repeat;
 }
 
 .accordeon__inner {
   //display: none;
   margin-left: 20px;
+  padding: 10px 0;
 }
-.active {
-  //display:block;
-}
+
 //--------------Наличие  в магазинах----------------------------------------
 .accordeon__inner-item {
   margin-bottom: 10px;

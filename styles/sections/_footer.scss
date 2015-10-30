@@ -1,0 +1,94 @@
+.footer {
+  background: url('../../img/bkg-footer.png') repeat-x;
+
+}
+
+.footer .centering {
+  //outline: 1px dashed green;
+
+  //vertical-align: bottom;
+
+}
+
+//----------------------------------------------------------
+.footer__navigation {
+  font-size: 0;
+  width: 533px;
+  height: 191px;
+  outline: 1px dashed white;
+  float: right;
+  text-align: right;
+
+}
+
+.footer__navigation .centering {
+  width: 100%;
+  height: 100%;
+
+  &:after {
+    content: '';
+    height: 100%;
+    display: inline-block;
+  }
+}
+
+.footer__navigation__list {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.footer__navigation__item {
+  display: inline-block;
+  padding: 5px 0 5px 25px;
+}
+
+.footer__navigation__link {
+  color: white;
+  display: block;
+  padding: 5px 0px;
+  font-size: 14px;
+  &:hover {
+    background: #e4e2e2;
+  }
+  &:active {
+    color: white;
+    background: $myOrange;
+  }
+}
+
+.footer__navigation__item_active {
+
+}
+
+.footer__down {
+  border-top: 1px solid #494949;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size:12px;
+
+}
+//--------------------------------------------------
+.footer__socials {
+  //position: absolute;
+
+}
+.footer__socials__list {
+
+}
+.footer__socials__item {
+    display:inline-block;
+}
+.footer__socials__link {
+
+  .socials__link_tw {}
+  .socials__link_fb {}
+  .socials__link_vk {}
+}
+
+.footer__up__logo {
+  position: absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+}
