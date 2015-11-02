@@ -1,13 +1,12 @@
 .wrapper {
   background: $bkg-color;
 }
-.article {
 
- }
 .sidebar__wrapper {
   float: left;
+  margin-bottom: 50px;
 }
 .article__inner {
+  width: 740px;
   float: right;
-  background: red;
 }

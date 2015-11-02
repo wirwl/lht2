@@ -14,6 +14,7 @@
 		<!--meta(name="viewport" content="device-width")-->
 		<link rel="stylesheet" type="text/css" href="bower/slider/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="bower/select2/dist/css/select2.css">
 		<title>Главная страница</title>
 	</head>
 	<body>
@@ -37,7 +38,7 @@
 						<div class="centering">
 							<div class="header__logo"><img src="../../img/cooltech.png" class="header-logo"></div>
 							<div class="header__search">
-								<input type="text" class="header__search__input">
+								<input type="text" placeholder="Что будем искать" class="header__search__input">
 								<button class="header__search__button">Найти</button>
 							</div>
 							<div class="header__links"><a href="#" class="header__links_item">Карта проезда</a><a href="#" class="header__links_item">История заказов</a><a href="#" class="header__links_item">Корзина</a></div>
@@ -208,7 +209,677 @@
 											</div>
 										</div>
 									</div>
-									<div class="article__inner">Я контент на главной 1</div>
+									<div class="article__inner">
+										<div class="content">
+											<div class="sort">
+												<div class="sort__left">
+													<div class="sort__select--wrap">
+														<div class="sort__title">Сортировать по</div>
+														<div class="sort__select">
+															<select class="sort__select-elem">
+																<option value="">по цене</option>
+																<option value="">по популярности</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="sort__right">
+													<div class="sort__title">Вид каталога</div>
+													<div class="sort__view">
+														<ul class="sort__view-list">
+															<li data-view="rows" class="sort__view-item sort__view_rows active"><a href="#" class="sort__view-link">
+																	<div class="sort__view-icon"></div></a></li>
+															<li data-view="grids" class="sort__view-item sort__view_grids"><a href="#" class="sort__view-link">
+																	<div class="sort__view-icon"></div></a></li>
+															<li data-view="lines" class="sort__view-item sort__view_lines"><a href="#" class="sort__view-link">
+																	<div class="sort__view-icon"></div></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="products">
+												<ul id="products-list" class="products__list">
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="products__item">
+														<div class="products__item-inner">
+															<div class="products__left">
+																<div class="products__slideshow">
+																	<div class="products__slideshow-block"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/technics/6" alt="" class="products__slideshow-img"></a>
+																		<ul class="products__slideshow-thumbs">
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/0" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/1" alt="" class="products__slideshow-thumb-img"></a></li>
+																			<li class="products__slideshow-item"><a href="#" class="products__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" alt="" class="products__slideshow-thumb-img"></a></li>
+																		</ul>
+																	</div>
+																	<div class="products__article">
+																		<div class="products__article-word">Артикул</div>
+																		<div class="products__article-num">189238</div>
+																	</div>
+																</div>
+																<div class="products__desc">
+																	<div class="products__desc-title">Смартфон Samsung FT-I9301I GALAXY S 3</div>
+																	<ul class="products__desc-options">
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Тим SIM-карты</div>
+																			<div class="products__option-value">Micro-SIM</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">Количество SIM-карт</div>
+																			<div class="products__option-value">1</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Цвет</div>
+																			<div class="products__option-value">Белый</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">ОС</div>
+																			<div class="products__option-value">Android</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">Связь 3G</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																		<li class="products__option-item">
+																			<div class="products__option-key">4G (LTE)</div>
+																			<div class="products__option-value">Нет</div>
+																		</li>
+																		<li class="products__option-item products__option-item_colored">
+																			<div class="products__option-key">GPS-модуль</div>
+																			<div class="products__option-value">Есть</div>
+																		</li>
+																	</ul>
+																	<div data-rating="3" class="products__rating">
+																		<!--ul.products__rating-stars
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item.products__rating-stars-item_filled
+																		//li.products__rating-stars-item
+																		//li.products__rating-stars-item
+																		-->
+																		<!--.products__rating-amount 3-->
+																	</div>
+																</div>
+															</div>
+															<div class="products__right">
+																<div class="products__price"> 11 290<i class="rub"></i></div>
+																<div class="products__info-bottom"><a href="#" class="products__buy-btn">В корзину</a>
+																	<div class="products__availability">В наличии</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<div class="pagination">
+													<ul class="pagination__list">
+														<li class="pagination__item pagination__item_prev"><a href="#" class="pagination__link">
+																<div class="pagination__mark"></div></a></li>
+														<li class="pagination__item"><a href="#" class="pagination__link">
+																<div class="pagination__mark">1</div></a></li>
+														<li class="pagination__item"><a href="#" class="pagination__link">
+																<div class="pagination__mark">2</div></a></li>
+														<li class="pagination__item"><a href="#" class="pagination__link">
+																<div class="pagination__mark">3</div></a></li>
+														<li class="pagination__item pagination__item_next"><a href="#" class="pagination__link">
+																<div class="pagination__mark"></div></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="attension">
+									<div class="main-title">Важная информация</div>
+									<div class="attension__text">
+										<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+										<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+										<p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+										<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+										<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+										<p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -219,11 +890,13 @@
 		<footer class="footer">
 			<div class="centering">
 				<div class="footer__up clearfix">
-					<!--.socials-->
-					<!--    ul.socials__list-->
-					<!--        each social in ['vk', 'fb', 'tw']-->
-					<!--            li.socials__item-->
-					<!--                a(href="#" class="socials__link socials__link_" + social)-->
+															<div class="footer__socials">
+																<ul class="footer__socials__list">
+																	<li class="footer__socials__item"><a href="#" class="footer__socials__link footer__socials__link_vk"></a></li>
+																	<li class="footer__socials__item"><a href="#" class="footer__socials__link footer__socials__link_fb"></a></li>
+																	<li class="footer__socials__item"><a href="#" class="footer__socials__link footer__socials__link_tw"></a></li>
+																</ul>
+															</div>
 															<nav class="footer__navigation">
 																<div class="centering">
 																	<ul class="footer__navigation__list">
@@ -243,6 +916,8 @@
 		</footer>
 		<script src="bower/jquery/dist/jquery.js" type="text/javascript"></script>
 		<script type="text/javascript" src="bower/slider/jquery-ui.js"></script>
+		<script src="bower/select2/dist/js/select2.js" type="text/javascript"></script>
+		<script src="bower/jquery.columnizer/src/jquery.columnizer.js" type="text/javascript"></script>
 		<script src="js/main.js" type="text/javascript"></script>
 	</body>
 </html>

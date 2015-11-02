@@ -1,23 +1,6 @@
 
-
-@mixin get-sprite($map, $icon) {
-  $sprite-image: sprite-file($map, $icon);
-  $sprite-map: sprite-url($map);
-  $sprite-position: sprite-position($map, $icon);
-
-  background: $sprite-map $sprite-position no-repeat;
-
-  $sprite-height: image-height($sprite-image);
-  $sprite-width: image-width($sprite-image);
-
-  height: $sprite-height;
-  width: $sprite-width;
-}
-
 .socials__link {
   display: block;
-  //width: 50px;
-  //height: 50px;
 }
 
 //$icons-layout: horizontal;
@@ -26,18 +9,21 @@
 
 $socials: fb, vk, tw;
 
-$socials-map: sprite-map('icons/*.png', $spacing: 40px);
+$socials-map: sprite-map('header/*.png', $spacing: 40px);
 
 @each $social in $socials {
   .socials__link_#{$social} {
     @include get-sprite($socials-map, $social);
+    &:hover {
+      @include get-sprite($socials-map, $social+'-hover');
+    }
   }
 }
 
 //* {outline: 1px dashed black;}
 .socials {
   position: absolute;
-  left:0;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -51,12 +37,15 @@ $socials-map: sprite-map('icons/*.png', $spacing: 40px);
   background: white;
   border-bottom: 2px solid $border-color;
 }
+
 .header__bottom {
   background: $bkg-color;
 }
+
 .header__top .centering {
   min-height: 77px;
 }
+
 .header__bottom .centering {
   min-height: 94px;
 }
@@ -83,28 +72,71 @@ $socials-map: sprite-map('icons/*.png', $spacing: 40px);
   text-decoration: none;
   color: black;
 }
-.header__links_item {
-  margin-left: 25px;
-}
+
 .header__logo {
   position: absolute;
-  left:0;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
   max-width: 238px;
   max-height: 36px;
   overflow: hidden;
 }
+
 .header__search {
   position: absolute;
-  left: 25%;
+  left: 27%;
   top: 50%;
   transform: translateY(-50%);
-  min-height: 32px;
+  min-height: 26px;
+  border-radius: 4px;
+  //border: 1px solid #dee1e4;
+  //overflow: hidden;
+
 }
+
+.header__search__input {
+  padding: 4px 0px 4px 10px;
+  border: 0;
+  width: 287px;
+  min-height: inherit;
+  background: white;
+  border: 1px solid #dee1e4;
+  border-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.header__search__button {
+  color: white;
+  background: $myOrange;
+  border: 8px solid $myOrange;
+  box-shadow: none;
+  //height:32px;
+  height: inherit;
+  margin-left: -5px;
+  //overflow: hidden;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 16px;
+}
+
 .header__links {
   position: absolute;
-  right:0;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.header__links_item {
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  &hover {
+    color: $myOrange;
+  }
+
 }

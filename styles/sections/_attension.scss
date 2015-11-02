@@ -1,0 +1,35 @@
+.main-title {
+  font-size: 20px;
+  line-height: 22px;
+  color: #333;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.attension__text {
+  column-gap: 40px !important;
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    color: $myBlack;
+    margin-bottom: 20px;
+    text-align:justify;
+    text-indent: 35px;
+  }
+
+  .column {
+
+    &.first {
+      float: left !important;
+      p {
+        margin-right: 45px;
+      }
+
+    }
+
+    &.last {
+      float: right !important;
+    }
+  }
+}

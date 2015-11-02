@@ -3,7 +3,7 @@ mixin createSocialButtons(className)
         ul(class=className+"__socials__list")
             each social in ['vk', 'fb', 'tw']
                 li(class=className+"__socials__item")
-                    a(href="#" class="socials__link socials__link_" + social)
+                    a(href="#" class=className+"__socials__link "+className+"__socials__link_" + social)
 
 
 mixin createColorPattern(className, rgb, active)
@@ -25,6 +25,8 @@ mixin nav(className, items, activeIndx)
                 each item, index in items
                     li(class=className + "__item ")
                         a(href="#" class= className + "__link "+ ((activeIndx == index) ? className + '__item' + '_active' : ''))= item
+
+
 
 //mixin breadcrumb(className, items)
 //    div(class= className)

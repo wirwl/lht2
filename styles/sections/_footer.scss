@@ -14,11 +14,10 @@
 .footer__navigation {
   font-size: 0;
   width: 533px;
-  height: 191px;
-  outline: 1px dashed white;
+  height: 161px;
   float: right;
   text-align: right;
-
+  padding-bottom:30px;
 }
 
 .footer__navigation .centering {
@@ -35,6 +34,7 @@
 .footer__navigation__list {
   display: inline-block;
   vertical-align: text-bottom;
+  padding-top: 110px;
 }
 
 .footer__navigation__item {
@@ -69,21 +69,38 @@
 
 }
 //--------------------------------------------------
-.footer__socials {
-  //position: absolute;
+//$icons-layout: horizontal;
+//$icons-spacing: 40px;
+//@import "icons-footer/*.png";
 
+$socials: fb, vk, tw;
+
+$socials-map: sprite-map('icons-footer/*.png', $spacing: 40px);
+
+@each $social in $socials {
+  .footer__socials__link_#{$social} {
+    @include get-sprite($socials-map, $social);
+    &:hover {
+      @include get-sprite($socials-map, $social+'-h');
+    }
+  }
+}
+
+.footer__socials {
+  position: absolute;
+  right:0;
+  top: 34px;
+  z-index: 999;
 }
 .footer__socials__list {
 
 }
 .footer__socials__item {
     display:inline-block;
+  padding-left: 26px;
 }
 .footer__socials__link {
-
-  .socials__link_tw {}
-  .socials__link_fb {}
-  .socials__link_vk {}
+  display: block;
 }
 
 .footer__up__logo {
